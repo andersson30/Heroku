@@ -1,7 +1,9 @@
 # Mintic Engrega Spring 4
  Se realiza la Historia de Usuario Proveedor, con las cuatro operaciones POST, GET, UPDATE y DELETE
-# requerimientos: Se requiere tener una instancia previa de posgres local o en la nube, la instancia 
-no debe haberse utilizado antes.
+# requerimientos: 
+Se requiere tener una instancia previa de posgres local o en la nube, la instancia 
+no debe haberse utilizado antes y configure en el archovo .setting sus credenciales.
+
 instale su ambiente virtual y las depencias de sus apuntes de clase (por ejemplo):
 pip install virtualenv --user
 python -m  venv env
@@ -12,17 +14,19 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 pip3 install django
 pip3 install psycopg2
 pip install djangorestframework
-
-Active su ambiente virtual y realize la migracion a su ambiente
-
-.\env\Scripts\activate 
-python manage.py makemigrations authApp
-python  manage.py  migrate
-python .\manage.py runserver
 pip3 install psycopg2 
 
-Despliegue de forma local:
+# Active su ambiente virtual y realize la migracion a su instacia de BD
+
+.\env\Scripts\activate 
+python manage.py makemigrations manosmaestras
+python  manage.py  migrate
+
+
+# Despliegue de forma local:
  python .\manage.py runserver
+ Ingrese a su navegador: http://localhost:8000
+ 
 POST:
 url:              http://localhost:8000/api/v1/proveedor/create/
 
