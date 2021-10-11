@@ -25,6 +25,10 @@ python  manage.py  migrate
 
 
 # Despliegue de forma local:
+Comente las 2 lineas ultimas dos lineas del archivo setting:
+'import django_heroku
+django_heroku.settings(locals())'
+
  python .\manage.py runserver
  Ingrese a su navegador: http://localhost:8000
  
