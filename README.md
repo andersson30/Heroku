@@ -2,7 +2,7 @@
  Se realiza la Historia de Usuario Proveedor, con las cuatro operaciones POST, GET, UPDATE y DELETE
 # requerimientos: 
 Se requiere tener una **instancia previa de posgres** local o en la nube, la instancia 
-no debe haberse utilizado antes, una vez tenga credenciales agregelas en el archivo .setting 
+no debe haberse utilizado antes, una vez tenga credenciales agregelas en el archivo .setting y debe **instalar Postman**
 
 
 instale su ambiente virtual y las depencias segun sus apuntes de clase ( aqui un ejemplo para windows):
@@ -49,6 +49,7 @@ Por ultimo despliegue con el siguiente comando:
 `python .\manage.py runserver`
 
  Ingrese a su navegador: `http://localhost:8000`
+ Pruebe los metodos mediante postman 
  
 POST:
 url:              http://localhost:8000/api/v1/proveedor/create/
