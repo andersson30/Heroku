@@ -2,7 +2,7 @@
  Se realiza la Historia de Usuario Proveedor, con las cuatro operaciones POST, GET, UPDATE y DELETE
 # requerimientos: 
 Se requiere tener una instancia previa de posgres local o en la nube, la instancia 
-no debe haberse utilizado antes y configure en el archovo .setting sus credenciales.
+no debe haberse utilizado antes y configure en el archivo .setting sus credenciales.
 
 instale su ambiente virtual y las depencias de sus apuntes de clase (por ejemplo):
 pip install virtualenv --user
