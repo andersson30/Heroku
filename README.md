@@ -6,34 +6,35 @@ no debe haberse utilizado antes, una vez tenga credenciales agregelas en el arch
 
 
 instale su ambiente virtual y las depencias segun sus apuntes de clase ( aqui un ejemplo para windows):
-pip install virtualenv --user
-python -m  venv env
- .\env\Scripts\activate
-pip install --upgrade pip
-Set-ExecutionPolicy Unrestricted -Scope Process
+`python -m  venv env`
+`pip install virtualenv --user`
+`python -m  venv env`
+` .\env\Scripts\activate`
+`pip install --upgrade pip`
+`Set-ExecutionPolicy Unrestricted -Scope Process`
 
-pip3 install django
-pip3 install psycopg2
-pip install djangorestframework
-pip3 install psycopg2 
+`pip3 install django`
+`pip3 install psycopg2`
+`pip install djangorestframework`
+`pip3 install psycopg2` 
 
 # Active su ambiente virtual y realize la migracion a su instacia de BD
 
-.\env\Scripts\activate 
-python manage.py makemigrations manosmaestras
-python  manage.py  migrate
+`.\env\Scripts\activate `
+`python manage.py makemigrations manosmaestras`
+`python  manage.py  migrate`
 
 
 # Despliegue de forma local:
-Comente las 2 lineas ultimas dos lineas del archivo setting:
+Comente las 2 lineas ultimas dos lineas del archivo .setting:
 
 `import django_heroku`
 
 `django_heroku.settings(locals())`
 
 Por ultimo despliegue con el siguiente comando:
- <!--python .\manage.py runserver-->
- Ingrese a su navegador: http://localhost:8000
+`python .\manage.py runserver`
+ Ingrese a su navegador: `http://localhost:8000`
  
 POST:
 url:              http://localhost:8000/api/v1/proveedor/create/
