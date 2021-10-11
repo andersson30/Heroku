@@ -1,0 +1,1 @@
+web: gunicorn manosmaestras.wsgi
