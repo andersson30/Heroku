@@ -52,7 +52,24 @@ Por ultimo despliegue con el siguiente comando:
  
 # Para el Despliegue en heroku 
 Se requiere descomentar las 2 ultimas lineas del archivo .setting 
-Sear una cuenta en heroku , descargar el cliente de heroku, verifique su archivo  .
+Sear una cuenta en heroku , descargar el cliente de heroku (cli heroku), verifique o copie en su proyecto los archivos:
+
+**.gitignore**
+
+**requirements.txt**
+
+**Procfile**
+
+Ingrese a su cuenta en heroku, busque su aplicacion o cree una, ingrese a la session Deploy y copier los comandos en este caso:
+heroku login
+`$ heroku git:clone -a minticunalgrupo6`
+`$ cd minticunalgrupo6`
+`$ git add .`
+`$ git commit -am "make it better"`
+`$ git push heroku master`
+En este caso:
+https://minticunalgrupo6.herokuapp.com/api/v1/proveedor/
+
  Pruebe los metodos mediante postman 
  
 POST:
