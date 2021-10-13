@@ -49,6 +49,10 @@ Por ultimo despliegue con el siguiente comando:
 `python .\manage.py runserver`
 
  Ingrese a su navegador: `http://localhost:8000`
+ 
+# Para el Despliegue en heroku 
+Se requiere descomentar las 2 ultimas lineas del archivo .setting 
+Sear una cuenta en heroku , descargar el cliente de heroku, verifique su archivo  .
  Pruebe los metodos mediante postman 
  
 POST:
