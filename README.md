@@ -4,7 +4,6 @@
 Se requiere tener una **instancia previa de posgres** local o en la nube, la instancia 
 no debe haberse utilizado antes, una vez tenga credenciales agregelas en el archivo .setting y debe **instalar Postman**
 
-
 instale su ambiente virtual y las depencias segun sus apuntes de clase ( aqui un ejemplo para windows):
 
 `python -m  venv env`
